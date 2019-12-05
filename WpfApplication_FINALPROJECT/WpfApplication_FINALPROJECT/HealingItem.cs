@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace WpfApplication_FINALPROJECT
 {
-    public class Berry : Item
+    public class HealingItem : Item
     {
-        string status;
-        
-        public Berry(string status, string name)
+        int hp;
+
+        public HealingItem(int hp, string name)
         {
-            this.status = status;
+            this.hp = hp;
             this.name = name;
         }
     }

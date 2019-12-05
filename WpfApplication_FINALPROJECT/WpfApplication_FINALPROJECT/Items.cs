@@ -8,5 +8,6 @@ namespace WpfApplication_FINALPROJECT
 {
     public class Item
     {
+        public string name;
     }
 }

@@ -26,8 +26,8 @@ namespace WpfApplication_FINALPROJECT
         }
 
         public List<Pokemon> ListOfPokemon = new List<Pokemon>();
-        public List<Berry> ListOfItems = new List<Berry>(); 
-
+        public List<Berry> ListOfBerries = new List<Berry>();
+        public List<HealingItem> ListOfHealingItems = new List<HealingItem>();
         
         private void PokemonButton(object sender, RoutedEventArgs e)
         {
@@ -41,11 +41,42 @@ namespace WpfApplication_FINALPROJECT
             ListOfPokemon.Add(Pikachu);
             Pokemon Raichu = new Pokemon("Electric", 60, 90, 55, 90, 80, 100);
             ListOfPokemon.Add(Raichu);
+            
         }
 
         private void BerryButton(object sender, RoutedEventArgs e)
         {
-            //https://bulbapedia.bulbagarden.net/wiki/Berry#List_of_Berries
+            Berry Cheri_Berry = new Berry("paralysis", "Cheri Berry");
+            ListOfBerries.Add(Cheri_Berry);
+            Berry Chesto_Berry = new Berry("sleep", "Chesto Berry");
+            ListOfBerries.Add(Chesto_Berry);
+            Berry Pecha_Berry = new Berry("poison", "Pecha Berry");
+            ListOfBerries.Add(Pecha_Berry);
+            Berry Rawst_Berry = new Berry("burn", "Rawst Berry");
+            ListOfBerries.Add(Rawst_Berry);
+            Berry Aspear_Berry = new Berry("freeze", "Aspear Berry");
+            ListOfBerries.Add(Aspear_Berry);
+            Berry Persim_Berry = new Berry("confusion", "Persim Berry");
+            ListOfBerries.Add(Persim_Berry);
+
+        }
+
+        private void HealingItemButtom(object sender, RoutedEventArgs e)
+        {
+            HealingItem Potion = new HealingItem(20, "Potion");
+            ListOfHealingItems.Add(Potion);
+            HealingItem SuperPotion = new HealingItem(50, "Super Potion");
+            ListOfHealingItems.Add(SuperPotion);
+            HealingItem HyperPotion = new HealingItem(200, "Hyper Potion");
+            ListOfHealingItems.Add(HyperPotion);
+            HealingItem FreshWater = new HealingItem(50, "Fresh Water");
+            ListOfHealingItems.Add(FreshWater);
+            HealingItem SodaPop = new HealingItem(60, "Soda Pop");
+            ListOfHealingItems.Add(SodaPop);
+            HealingItem Lemonade = new HealingItem(80, "Lemonade");
+            ListOfHealingItems.Add(Lemonade);
+            HealingItem MooMooMilk = new HealingItem(100, "MooMoo Milk");
+            ListOfHealingItems.Add(MooMooMilk);
         }
     }
 }
