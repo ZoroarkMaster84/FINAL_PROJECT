@@ -8,7 +8,7 @@ namespace WpfApplication_FINALPROJECT
 {
     public class Berry : Item
     {
-        string status;
+       public string status;
         
         public Berry(string status, string name)
         {

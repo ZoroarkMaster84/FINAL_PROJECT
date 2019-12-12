@@ -7,14 +7,34 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FFC71C1C" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <Button Name ="Pokemon_Button" Width="100" Height="50" Click="PokemonButton" Margin="245,35,172,234">Pokemon</Button>
         <Button Name ="Berry_Button" Width="100" Height="50" Click="BerryButton" Margin="226,122,191,147">Berry</Button>
         <Button Name ="HealingItem_Button" Width="100" Height="50" Click="HealingItemButtom" Margin="226,211,191,58">Healing Item</Button>
         <TextBox Name="Pokemon_TextBox" Margin="25,35,272,234" BorderBrush="Black">Which Pokemon do you want info on?</TextBox>
         <TextBox Name="Berry_TextBox" Margin="25,122,291,147" BorderBrush="Black">Which status are you trying to heal?</TextBox>
         <TextBox Name="HealingItem_TextBox" Margin="25,211,291,58" BorderBrush="Black">How much hp do you want to heal?</TextBox>
-        <TextBlock Name="Pokemon_TextBlock" Margin="361,35,46,234"></TextBlock>
-        <TextBlock Name="Berry_TextBlock" Margin="361,122,46,147"></TextBlock>
-        <TextBlock Name="HealingItem_TextBlock" Margin="361,211,46,58"></TextBlock>
+        <TextBlock Name="Pokemon_TextBlock" Margin="350,36,10,233" Foreground="Black" Background="#FF8AAAFF">
+            
+            <TextBlock.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="Black" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.OpacityMask><Run>
+                <Run.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="Black" Offset="1"/>
+                    </LinearGradientBrush>
+                </Run.Background>
+            </Run></TextBlock>
+        <TextBlock Name="Berry_TextBlock" Margin="331,122,10,147" Background="#FF8A90FF"/>
+        <TextBlock Name="HealingItem_TextBlock" Margin="331,211,10,58" Background="#FF71ABFF"/>
     </Grid>
 </Window>

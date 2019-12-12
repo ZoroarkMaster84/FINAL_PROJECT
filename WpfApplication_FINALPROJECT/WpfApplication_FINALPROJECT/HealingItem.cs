@@ -8,9 +8,9 @@ namespace WpfApplication_FINALPROJECT
 {
     public class HealingItem : Item
     {
-        int hp;
+        public string hp;
 
-        public HealingItem(int hp, string name)
+        public HealingItem(string hp, string name)
         {
             this.hp = hp;
             this.name = name;

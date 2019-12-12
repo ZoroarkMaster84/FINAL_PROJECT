@@ -8,16 +8,18 @@ namespace WpfApplication_FINALPROJECT
 {
     public class Pokemon
     {
-        string type;
-        int hp;
-        int attack;
-        int defense;
-        int sp_atk;
-        int sp_def;
-        int speed;
+        public string Name;
+        public string type;
+        public string hp;
+        public string attack;
+        public string defense;
+        public string sp_atk;
+        public string sp_def;
+        public string speed;
 
-        public Pokemon(string type, int hp, int attack, int defense, int sp_atk, int sp_def, int speed)
+        public Pokemon(string Name, string type, string hp, string attack, string defense, string sp_atk, string sp_def, string speed)
         {
+            this.Name = Name;
             this.type = type;
             this.hp = hp;
             this.attack = attack;
